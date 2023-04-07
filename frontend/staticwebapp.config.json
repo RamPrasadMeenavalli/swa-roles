@@ -7,6 +7,11 @@
         {
             "route": "/authenticated/*",
             "allowedRoles": [ "authenticated" ]
+        },
+        {
+            "route": "/meenavalli/*",
+            "rewrite": "/admin",
+            "allowedRoles": [ "admin" ]
         }
     ],
     "auth": {
