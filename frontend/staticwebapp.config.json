@@ -9,6 +9,10 @@
             "allowedRoles": [ "authenticated" ]
         },
         {
+            "route": "/api/*",
+            "allowedRoles": [ "authenticated" ]
+        },
+        {
             "route": "/meenavalli/*",
             "rewrite": "/admin",
             "allowedRoles": [ "admin" ]
