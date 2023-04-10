@@ -30,7 +30,8 @@
                 },
                 "login": {
                     "loginParameters": [
-                        "resource=https://graph.microsoft.com"
+                        "resource=https://graph.microsoft.com",
+                        "scope=openid profile email offline_access"
                     ]
                 }
             }
