@@ -29,7 +29,7 @@
     <pre></pre>
     <script>
         async function getUserInfo() {
-            const response = await fetch('https://swa-bcknd.azurewebsites.net/api/activate');
+            const response = await fetch('/api/activate');
             const user = await response.json();
             const pre = document.querySelector('pre');
             pre.textContent = JSON.stringify(user, null, 2);
