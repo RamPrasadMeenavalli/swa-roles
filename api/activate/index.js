@@ -10,7 +10,8 @@ module.exports = async function (context, req) {
     context.res = {
       body: {
         clientPrincipal: JSON.parse(decoded),
-        token: token + "!!"
+        token: token + "!!",
+        allHeaders: req.headers
       },
     };
 }
