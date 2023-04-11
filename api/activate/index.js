@@ -4,9 +4,6 @@ module.exports = async function (context, req) {
     const encoded = Buffer.from(header, 'base64');
     const decoded = encoded.toString('ascii');
 
-    //const tokenencoded = Buffer.from(token, 'base64');
-    //const tokendecoded = tokenencoded.toString('ascii');
-
     context.log("Printing headers!!");
     context.log(req.headers);
 
